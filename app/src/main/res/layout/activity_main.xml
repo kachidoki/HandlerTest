@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:text="hello world"
+        tools:context=".MainActivity" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        />
+    <Button
+        android:id="@+id/end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="end"
+        />
+    <Button
+        android:id="@+id/thread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="thread"
+        />
+    <Button
+        android:id="@+id/SecondActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="progressHandler"
+        />
+    <Button
+        android:id="@+id/ThirdActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="progressAsyncTask"
+        />
+    <Button
+        android:id="@+id/ForthActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="progressHandlerThread"
+        />
+</LinearLayout>
