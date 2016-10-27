@@ -28,6 +28,7 @@ public class ForthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e("Thread","OnCreatForth:--->"+Thread.currentThread().getId()+" name = "+Thread.currentThread().getName());
         setContentView(R.layout.activity_forth);
 
         mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
@@ -39,6 +40,7 @@ public class ForthActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 Log.e("Thread","HandlerMessage:--->"+Thread.currentThread().getId());
+                //这个方法虽然更新UI但是自带线程同步效果误导很久
                 mProgressBar.setProgress(msg.arg1);
                 handler.post(work);
             }
